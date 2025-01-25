@@ -1,0 +1,21 @@
+{
+  "name": "cse341project2",
+  "version": "1.0.0",
+  "description": "Second Project",
+  "homepage": "https://github.com/gatlingmcgee/cse341project2#readme",
+  "bugs": {
+    "url": "https://github.com/gatlingmcgee/cse341project2/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gatlingmcgee/cse341project2.git"
+  },
+  "license": "ISC",
+  "author": "Sean",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  }
+}
