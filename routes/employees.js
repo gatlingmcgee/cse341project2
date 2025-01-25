@@ -5,8 +5,8 @@ const employeesController = require('../controllers/employees');
 
 routes.get('/', employeesController.getAll);
 routes.get('/:id', employeesController.getSingle);
-routes.post('/', employeesController.createUser);
-// routes.put('/:id', usersController.updateUser);
-// routes.delete('/:id', usersController.deleteUser);
+routes.post('/', employeesController.createEmployee);
+routes.put('/:id', employeesController.updateEmployee);
+routes.delete('/:id', employeesController.deleteEmployee);
 
 module.exports = routes;
