@@ -11,25 +11,29 @@ POST http://localhost:3001/employees HTTP/1.1
 content-type: application/json
 
 {
-    "firstname": "Hannah",
-    "lastname": "White",
-    "badgenumber": "33445",
-    "department": "Admin",
-    "shift": "Morning"
+    "firstname": "Liam",
+    "lastname": "Garcia",
+    "badgenumber": "44321",
+    "department": "IT",
+    "shift": "Afternoon",
+    "location": "Unknown",
+    "status": "Active"
 }
 
 ### PUT/UPDATE contact 
-PUT http://localhost:3001/employees/6795603fe1aa7ce9574d2b2c HTTP/1.1 
+PUT http://localhost:3001/employees/67956f44671b463256fce1b7 HTTP/1.1 
 content-type: application/json
 
 {
-    "firstname": "Isaac",
-    "lastname": "Davis",
-    "badgenumber": "66778",
-    "department": "Procurement",
-    "shift": "Afternoon"
+    "firstname": "Katherine",
+    "lastname": "Harris",
+    "badgenumber": "11234",
+    "department": "Finance",
+    "shift": "Morning",
+    "location": "Unknown",
+    "status": "Active"
 } 
 
 ### DELETE contact 
-DELETE http://localhost:3001/employees/67955e6dcf5e13b32d4080c0 HTTP/1.1
+DELETE http://localhost:3001/employees/67945cad4e39ba0930a61590 HTTP/1.1
 

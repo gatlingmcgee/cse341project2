@@ -8,5 +8,6 @@ routes.get('/', (req, res) => {
 });
 
 routes.use('/employees', require('./employees'));
+routes.use('/facilities', require('./facilities'));
 
 module.exports = routes;
