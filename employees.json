@@ -1,0 +1,101 @@
+[
+    {
+      "firstname": "John",
+      "lastname": "Doe",
+      "badgenumber": "12345",
+      "department": "HR",
+      "shift": "Morning"
+    },
+    {
+      "firstname": "Jane",
+      "lastname": "Smith",
+      "badgenumber": "67890",
+      "department": "Finance",
+      "shift": "Afternoon"
+    },
+    {
+      "firstname": "Alice",
+      "lastname": "Johnson",
+      "badgenumber": "11223",
+      "department": "IT",
+      "shift": "Night"
+    },
+    {
+      "firstname": "Bob",
+      "lastname": "Martinez",
+      "badgenumber": "44556",
+      "department": "Sales",
+      "shift": "Morning"
+    },
+    {
+      "firstname": "Charlie",
+      "lastname": "Lee",
+      "badgenumber": "77889",
+      "department": "Marketing",
+      "shift": "Afternoon"
+    },
+    {
+      "firstname": "David",
+      "lastname": "Kim",
+      "badgenumber": "99001",
+      "department": "Operations",
+      "shift": "Night"
+    },
+    {
+      "firstname": "Emily",
+      "lastname": "Brown",
+      "badgenumber": "22334",
+      "department": "Customer Support",
+      "shift": "Morning"
+    },
+    {
+      "firstname": "Fiona",
+      "lastname": "Wilson",
+      "badgenumber": "55667",
+      "department": "R&D",
+      "shift": "Afternoon"
+    },
+    {
+      "firstname": "George",
+      "lastname": "Taylor",
+      "badgenumber": "88990",
+      "department": "Legal",
+      "shift": "Night"
+    },
+    {
+      "firstname": "Hannah",
+      "lastname": "White",
+      "badgenumber": "33445",
+      "department": "Admin",
+      "shift": "Morning"
+    },
+    {
+      "firstname": "Isaac",
+      "lastname": "Davis",
+      "badgenumber": "66778",
+      "department": "Procurement",
+      "shift": "Afternoon"
+    },
+    {
+      "firstname": "Jack",
+      "lastname": "Miller",
+      "badgenumber": "99887",
+      "department": "Engineering",
+      "shift": "Night"
+    },
+    {
+      "firstname": "Katherine",
+      "lastname": "Harris",
+      "badgenumber": "11234",
+      "department": "Finance",
+      "shift": "Morning"
+    },
+    {
+      "firstname": "Liam",
+      "lastname": "Garcia",
+      "badgenumber": "44321",
+      "department": "IT",
+      "shift": "Afternoon"
+    }
+  ]
+  
