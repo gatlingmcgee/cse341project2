@@ -16,11 +16,6 @@ const getAll = async (req, res) => {
     } catch (err) {
         res.status(400).json({ message: err.message });
     }
-    // const result = await mongodb.getDatabase().db().collection('employees').find();
-    // result.toArray().then((employees) => {
-    //     res.setHeader('Content-Type', 'application/json');
-    //     res.status(200).json(employees);
-    // });
 };
 
 const getSingle = async (req, res) => {
@@ -47,13 +42,6 @@ const getSingle = async (req, res) => {
     } catch (err) {
         res.status(400).json({ message: err.message });
     }
-
-    // const employeeId = new ObjectId(req.params.id);
-    // const result = await mongodb.getDatabase().db().collection('employees').find({ _id: employeeId });
-    // result.toArray().then((employees) => {
-    //     res.setHeader('Content-Type', 'application/json');
-    //     res.status(200).json(employees[0]);
-    // });
 };
 
 const createEmployee = async (req, res) => {

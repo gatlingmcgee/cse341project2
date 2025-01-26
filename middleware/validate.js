@@ -14,7 +14,7 @@ const saveEmployees = (req, res, next) => {
 
     validator(req.body, employeeValidationRule, {}, (err, status) => {
         if (!status) {
-            res.status(412).send({
+            res.status(400).send({
                 success: false,
                 message: 'Validation failed',
                 data: err
@@ -35,7 +35,7 @@ const saveFacilities = (req, res, next) => {
 
     validator(req.body, facilityValidationRule, {}, (err, status) => {
         if (!status) {
-            res.status(412).send({
+            res.status(400).send({
                 success: false,
                 message: 'Validation failed',
                 data: err
