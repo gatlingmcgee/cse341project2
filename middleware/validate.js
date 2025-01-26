@@ -1,17 +1,18 @@
 const validator = require('../helpers/validate');
 
 const saveEmployees = (req, res, next) => {
-    const validationRule = {
+    const employeeValidationRule = {
         firstname: "required|string",
         lastname: "required|string",
         badgenumber: "required|string",
         department: "required|string",
-        shift: "string",
-        location: "string",
-        status: "string"
+        shift: "required|string",
+        location: "required|string",
+        status: "required|string"
     };
+    
 
-    validator(req.body, validationRule, {}, (err, status) => {
+    validator(req.body, employeeValidationRule, {}, (err, status) => {
         if (!status) {
             res.status(412).send({
                 success: false,
@@ -23,6 +24,29 @@ const saveEmployees = (req, res, next) => {
         }
     });
 };
+
+const saveFacilities = (req, res, next) => {
+    
+    const facilityValidationRule = {
+        facilityLocation: "required|string",
+        facilityName: "required|string",
+        facilityStatus: "required|string"
+    };
+
+    validator(req.body, facilityValidationRule, {}, (err, status) => {
+        if (!status) {
+            res.status(412).send({
+                success: false,
+                message: 'Validation failed',
+                data: err
+            });
+        } else {
+            next();
+        }
+    });
+};
+
+
 
 // const { validateEmployee } = require('../validators/employeeValidation'); // Import employee validation
 
@@ -41,5 +65,6 @@ const saveEmployees = (req, res, next) => {
 // };
 
 module.exports = {
-    saveEmployees
+    saveEmployees,
+    saveFacilities
 };

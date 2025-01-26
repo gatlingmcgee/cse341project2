@@ -5,7 +5,7 @@
     "description": "Employees API",
     "version": "1.0.0"
   },
-  "host": "cse341project2-3xy5.onrender.com",
+  "host": "cse341project2-3xy5.onrender.com/",
   "basePath": "/",
   "schemes": [
     "https"
@@ -249,6 +249,9 @@
           "204": {
             "description": "No Content"
           },
+          "412": {
+            "description": "Precondition Failed"
+          },
           "500": {
             "description": "Internal Server Error"
           }
@@ -275,6 +278,9 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
           }
         }
       },
@@ -315,6 +321,9 @@
           },
           "400": {
             "description": "Bad Request"
+          },
+          "412": {
+            "description": "Precondition Failed"
           },
           "500": {
             "description": "Internal Server Error"

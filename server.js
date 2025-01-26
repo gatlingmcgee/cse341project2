@@ -17,18 +17,8 @@ app.use((req, res, next) => {
 });
 app.use('/', require('./routes'));
 
-// process.on('uncaughtException', (err, origin) => {
-//     console.log(process.stderr.fd, `Caught exception: ${err}\n` + `Exception origin: ${origin}`);
-// });
-
-// Global error handler
-app.use((err, req, res, next) => {
-    console.error(err.stack); // log the error stack for debugging
-    res.status(500).json({
-        success: false,
-        message: 'Internal server error',
-        error: err.message
-    });
+process.on('uncaughtException', (err, origin) => {
+    console.log(process.stderr.fd, `Caught exception: ${err}\n` + `Exception origin: ${origin}`);
 });
 
 

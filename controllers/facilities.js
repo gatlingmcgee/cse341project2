@@ -12,6 +12,9 @@ const getAllFacilities = async (req, res) => {
 
 const getSingleFacility = async (req, res) => {
     //#swagger.tags=['Facilities']
+    if (!ObjectId.isValid(req.params.id)) {
+        res.status(400).json('Must be valid ID to update');
+    }
     const facilityId = new ObjectId(req.params.id);
     const result = await mongodb.getDatabase().db().collection('facilities').find({ _id: facilityId });
     result.toArray().then((facilities) => {
