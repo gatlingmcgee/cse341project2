@@ -3,10 +3,10 @@
  
 GET http://localhost:3001/employees
 
-### Get contact by id 
+### Get employee by id 
 GET http://localhost:3001/employees/67945cad4e39ba0930a6158e
 
-### CREATE contact 
+### CREATE employee 
 POST http://localhost:3001/employees HTTP/1.1 
 content-type: application/json
 
@@ -20,7 +20,7 @@ content-type: application/json
     "status": "Active"
 }
 
-### PUT/UPDATE contact 
+### PUT/UPDATE employee 
 PUT http://localhost:3001/employees/67956f44671b463256fce1b7 HTTP/1.1 
 content-type: application/json
 
@@ -34,6 +34,39 @@ content-type: application/json
     "status": "Active"
 } 
 
-### DELETE contact 
+### DELETE employee 
 DELETE http://localhost:3001/employees/67945cad4e39ba0930a61590 HTTP/1.1
+
+
+
+// LOCALHOST 
+### Get all facilities
+ 
+GET http://localhost:3001/facilities
+
+### Get facility by id 
+GET http://localhost:3001/facilities/679570440e10e0b8112e0326
+
+### CREATE facility 
+POST http://localhost:3001/facilities HTTP/1.1 
+content-type: application/json
+
+{
+    "facilityLocation": "Procurement Office",
+    "facilityName": "Procurement Department",
+    "facilityStatus": "Active"
+}
+
+### PUT/UPDATE facility 
+PUT http://localhost:3001/facilities/6795d0abbb674f3845f62b52 HTTP/1.1 
+content-type: application/json
+
+{
+    "facilityLocation": "IT Security Operations",
+    "facilityName": "IT Security Control Room",
+    "facilityStatus": "Active"
+} 
+
+### DELETE facility
+DELETE http://localhost:3001/facilities/6795d0abbb674f3845f62b52 HTTP/1.1
 
