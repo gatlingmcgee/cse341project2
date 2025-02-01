@@ -5,9 +5,10 @@
     "description": "Employees API",
     "version": "1.0.0"
   },
-  "host": "cse341project2-3xy5.onrender.com",
+  "host": "localhost:3001",
   "basePath": "/",
   "schemes": [
+    "http",
     "https"
   ],
   "paths": {
