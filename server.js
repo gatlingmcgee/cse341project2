@@ -5,6 +5,7 @@ const passport = require('passport');
 const session = require('express-session');
 const GitHubStrategy = require('passport-github2').Strategy;
 const cors = require('cors');
+const sessionFileStore = require('session-file-store')(session); // Import session-file-store
 
 const app = express();
 const port = process.env.PORT || 3001;
@@ -14,7 +15,8 @@ app
     .use(session({
         secret: "secret" ,
         resave: false ,
-        saveUninitialized: true ,
+        saveUninitialized: true,
+        store: new sessionFileStore({ path: './sessions', ttl: 3600 })  // Set the file store
     }))
     .use(passport.initialize())
     .use(passport.session())
